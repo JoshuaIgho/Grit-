@@ -40,13 +40,12 @@ const Hero = () => {
         />
         
         {/* Desktop: Show full image with max constraints */}
-        <div className="hidden md:block relative w-full h-full max-w-5xl max-h-[70vh] mx-auto">
-          <img 
-            src="https://customer-assets.emergentagent.com/job_minimal-strength/artifacts/8zogpeu9_ChatGPT%20Image%20Jul%209%2C%202025%2C%2009_26_10%20PM.png"
-            alt="GRIT Portrait"
-            className="w-full h-full object-contain"
-          />
-        </div>
+        <img 
+          src="https://customer-assets.emergentagent.com/job_minimal-strength/artifacts/8zogpeu9_ChatGPT%20Image%20Jul%209%2C%202025%2C%2009_26_10%20PM.png"
+          alt="GRIT Portrait"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: 'center 40%' }}
+        />
 
         {/* Mobile/Tablet: Cover with better positioning */}
         <img 
